@@ -35,8 +35,8 @@ public class CrowdAgriApplication {
 	@Bean
 	  public CommandLineRunner demo(UserService Urepository,AgriculteurService Arepository,CampagneService xe) {
 	    return (args) -> {
-	   //  User ds = new User("Jadck", "hjtfj");
-	     // Urepository.saveUser(ds);
+	     User ds = new User("Jadck", "hjtfj");
+	      Urepository.saveUser(ds);
 	      //Urepository.saveUser(new User("Dack", "jgc"));
 	      //Urepository.saveUser(new User("gack", "jfj"));
 	      //Urepository.saveUser(new User("jack", "jgc"));
@@ -55,7 +55,7 @@ public class CrowdAgriApplication {
 	     // log.info(ag.toString());
 	     // log.info(ds.toString());
 	     // log.info(a.toString());
-	      
+	     /* 
 	     int i=0;
 	     ArrayList<String> maListe=new ArrayList<String>();
 	      for (User user : Urepository.getUser()) {
@@ -81,7 +81,7 @@ public class CrowdAgriApplication {
 	      
 	      // fetch customers by last name
 	   
-	      log.info("");
+	      log.info("");*/
 	    };
 	  }
 }
