@@ -8,7 +8,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="User")
+@Table(name="UserAgri")
 public class User {
 	@Id
 	@GeneratedValue(strategy =GenerationType.AUTO)
@@ -16,10 +16,8 @@ public class User {
 	private String email;
 	private String password;
 	@OneToOne(mappedBy="user_agri")
-
 	private Agriculteur agri;
 	@OneToOne(mappedBy="user_invest")
-
 	private Investisseur invest;
 	
 	
