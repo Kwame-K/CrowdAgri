@@ -35,8 +35,8 @@ public class CrowdAgriApplication {
 	@Bean
 	  public CommandLineRunner demo(UserService Urepository,AgriculteurService Arepository,CampagneService xe) {
 	    return (args) -> {
-	     User ds = new User("Jadck", "hjtfj");
-	      Urepository.saveUser(ds);
+	    // User ds = new User("Jadck", "hjtfj");
+	     // Urepository.saveUser(ds);
 	      //Urepository.saveUser(new User("Dack", "jgc"));
 	      //Urepository.saveUser(new User("gack", "jfj"));
 	      //Urepository.saveUser(new User("jack", "jgc"));
