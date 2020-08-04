@@ -32,17 +32,17 @@ public class CampagneController {
 	}
 	
 	@PostMapping("/addCampagne")
-	public Campagne adCampagne(@RequestBody Campagne camp) {
+	public Campagne addCampagne(@RequestBody Campagne camp) {
 		return service.saveCampagne(camp);
 }
 	@PutMapping("/updateCampagne")
-		public Campagne updateUser(@RequestBody Campagne camp) {
-			return service.updateCampagne(camp);
+	public Campagne updateCamp(@RequestBody Campagne camp) {
+		return service.updateCampagne(camp);
 		}
 		
 		
-		@DeleteMapping("/deleteCamp/{id}")
-		public String deleteUser(@PathVariable Integer id) {
+	@DeleteMapping("/deleteCamp/{id}")
+	public String deleteCamp(@PathVariable Integer id) {
 		return service.deleteCampagne(id);
 		}
 }
