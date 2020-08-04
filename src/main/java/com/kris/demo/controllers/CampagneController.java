@@ -35,13 +35,13 @@ public class CampagneController {
 	public Campagne addCampagne(@RequestBody Campagne camp) {
 		return service.saveCampagne(camp);
 }
-	@PutMapping("/updateCampagne")
+	@PostMapping("/updateCampagne")
 	public Campagne updateCamp(@RequestBody Campagne camp) {
 		return service.updateCampagne(camp);
 		}
 		
 		
-	@DeleteMapping("/deleteCamp/{id}")
+	@PostMapping("/deleteCamp/{id}")
 	public String deleteCamp(@PathVariable Integer id) {
 		return service.deleteCampagne(id);
 		}
