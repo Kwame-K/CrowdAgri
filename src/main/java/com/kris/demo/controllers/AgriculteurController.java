@@ -32,13 +32,13 @@ public class AgriculteurController {
 		return service.saveAgriculteur(agri);
 }
 		@PutMapping("/updateAgriculteur")
-	public Agriculteur updateUser(@RequestBody Agriculteur agri) {
+	public Agriculteur updateAgri(@RequestBody Agriculteur agri) {
 		return service.updateAgriculteur(agri);
 	}
 	
 	
 	@DeleteMapping("/deleteAgri/{id}")
-	public String deleteUser(@PathVariable Integer id) {
+	public String deleteAgri(@PathVariable Integer id) {
 	return service.deleteAgriculteur(id);
 	}
 	
