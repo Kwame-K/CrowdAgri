@@ -30,13 +30,13 @@ public class InvestisseurController {
 	public Investisseur addInvestisseur(@RequestBody Investisseur invest) {
 		return service.saveInvest(invest);
 }
-	@PutMapping("/updateInvestisseur")
+	@PosttMapping("/updateInvestisseur")
 	public Investisseur updateInvest(@RequestBody Investisseur invest) {
 		return service.updateInvestisser(invest);
 	}
 	
 	
-	@DeleteMapping("/deleteInvest/{id}")
+	@PostMapping("/deleteInvest/{id}")
 	public String deleteInvest(@PathVariable Integer id) {
 	return service.deleteInvestisseur(id);
 	}
