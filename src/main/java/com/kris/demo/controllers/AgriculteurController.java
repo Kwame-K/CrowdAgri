@@ -31,7 +31,7 @@ public class AgriculteurController {
 	public Agriculteur addAgriculteur(@RequestBody Agriculteur agri) {
 		return service.saveAgriculteur(agri);
 }
-		@PutMapping("/updateAgriculteur")
+	@PutMapping("/updateAgriculteur")
 	public Agriculteur updateAgri(@RequestBody Agriculteur agri) {
 		return service.updateAgriculteur(agri);
 	}
