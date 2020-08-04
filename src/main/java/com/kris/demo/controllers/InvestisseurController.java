@@ -30,7 +30,7 @@ public class InvestisseurController {
 	public Investisseur addInvestisseur(@RequestBody Investisseur invest) {
 		return service.saveInvest(invest);
 }
-	@PosttMapping("/updateInvestisseur")
+	@PostMapping("/updateInvestisseur")
 	public Investisseur updateInvest(@RequestBody Investisseur invest) {
 		return service.updateInvestisser(invest);
 	}
